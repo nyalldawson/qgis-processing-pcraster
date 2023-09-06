@@ -12,12 +12,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
     </head>
 
     <body class="homepage">
@@ -157,6 +154,8 @@
 <li>Click the arrows icon to change from skip to a PCRaster version to install. </li>
 <li>Click <em>Next</em> to complete the installation.</li>
 </ol>
+<p>Watch this video:
+<a href="https://youtu.be/9rFL2VgbZ7Q">Install QGIS with the Standalone Installer and Add Missing Packages</a></p>
 <h3 id="linux-macos-and-windows-conda">Linux, MacOS and Windows (conda)</h3>
 <p>PCRaster is available on <a href="https://conda-forge.org/feedstock-outputs/index.html">conda-forge</a> and can be installed using conda. Supported platforms are Linux, MacOS and Windows. QGIS and PCRaster need to be installed in the same conda environment.</p>
 <p>First thing you need to do is to install the Conda packaging system. Two distributions install Conda: Anaconda and Miniconda.</p>
@@ -167,9 +166,10 @@
 <li>Type <code>qgis</code> to run QGIS</li>
 <li>Install the plugin</li>
 </ol>
-<p><em>Note that ARM64 for MacOS (e.g. M1, M2) is not yet supported by QGIS in conda.</em></p>
 <p>Watch this video:</p>
 <p><a href="https://youtu.be/RaFrXzw7IvI" title="Install PCRaster and QGIS in conda"><img alt="Install PCRaster and QGIS in conda" src="https://user-images.githubusercontent.com/1172662/148248750-d0f4adf0-67fb-4bcb-a524-b8ad518c0c30.png" /></a></p>
+<p>Alternatively, you can use mamba, which is faster. Watch this video:</p>
+<p><a href="https://youtu.be/VgBYgk7VQWg" title="Install Mamba and create a Python environment with QGIS and PCRaster"><img alt="Install Mamba and create a Python environment with QGIS and PCRaster" src="https://github.com/jvdkwast/qgis-processing-pcraster/assets/1172662/29a7f31e-50dc-4b3f-9534-09fce8ee4ec7" /></a></p>
 <h3 id="build-pcraster-from-source-on-linux">Build PCRaster from source on Linux</h3>
 <p>In <a href="https://gist.github.com/timlinux/5824f0e3d75f2fc43267e5c058602cde#file-buildingpcrasteronfedora-md">this Gist</a> by Tim Sutton you can read how to build PCRaster on Fedora from source.</p>
 <p>For building PCRaster on Ubuntu you can type the following commands in the terminal window:</p>
@@ -206,12 +206,14 @@ pcr.__version__
                 <p>Copyright &copy; 2021 <a href="https://north-road.com">North Road</a> and ...</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script>
             var base_url = ".",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -278,6 +280,6 @@ pcr.__version__
 </html>
 
 <!--
-MkDocs version : 1.4.2
-Build Date UTC : 2023-02-22 06:04:03.400906+00:00
+MkDocs version : 1.5.2
+Build Date UTC : 2023-09-06 21:22:43.028398+00:00
 -->
